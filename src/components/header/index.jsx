@@ -3,6 +3,13 @@ import * as S from "./style";
 import SelecorHat from "../img/Selector-hat.png";
 import AuioTheme from "../audio/Audio-theme.mp3";
 import { Howl } from "howler";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Error from "../pages/Error/index";
+import Home from "../pages/Home/Index";
+import Gryffindor from "../pages/Gryffindor/index";
+import Hufflepuff from "../pages/Hufflepuff/index";
+import Ravenclaw from "../pages/Ravenclaw";
+import Slytherin from "../pages/Slytherin/index";
 
 export default function index() {
   const sound = new Howl({
@@ -15,34 +22,25 @@ export default function index() {
     <S.Header id="top">
       <S.Container>
         <S.Box1>
-          <S.Image src={SelecorHat} alt="Selector Hat from Harry Potter" />
+          <Link to='/'> <S.Image src={SelecorHat} alt="Selector Hat from Harry Potter" /> </Link>
           <S.Title>HARRY POTTER</S.Title>
-          <S.List>
-            <li>
-              <S.A
-                href="https://www.wizardingworld.com/discover/films"
-                target={"_blank"}
-              >
-                Movies
-              </S.A>
-            </li>
-            <li>
-              <S.A
-                href="https://www.wizardingworld.com/news/discover-your-hogwarts-house-on-wizarding-world"
-                target={"_blank"}
-              >
-                Houses
-              </S.A>
-            </li>
-            <li>
-              <S.A
-                href="https://my.wizardingworld.com/sorting-hat"
-                target={"_blank"}
-              >
-                Know your house
-              </S.A>
-            </li>
-          </S.List>
+          <div>
+            <Link to='/' >Home</Link>
+            <Link to='/Gryffindor' >Gryffindor</Link>
+            <Link to='/Hufflepuff' >Hufflepuff</Link>
+            <Link to='/Ravenclaw' >Ravenclaw</Link>
+            <Link to='/Slytherin' >Slytherin</Link>
+          </div>
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Gryffindor" element={<Gryffindor />} />
+            <Route path="/Hufflepuff" element={<Hufflepuff />} />
+            <Route path="/Ravenclaw" element={<Ravenclaw />} />
+            <Route path="/Slytherin" element={<Slytherin />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+
         </S.Box1>
         <S.Box2>
           <h1>Play music</h1>
