@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
+import * as S from './style';
 
 export default function index() {
   return (
-    <div>fooetr</div>
+    <S.Footer>
+      <h1>See you soon</h1>
+      <a href='#top'><button>Go up</button></a>
+    </S.Footer>
   )
 }

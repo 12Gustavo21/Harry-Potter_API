@@ -8,45 +8,45 @@ export default function index() {
   const sound = new Howl({
     src: [AuioTheme],
     html5: true,
-    loop: true
+    loop: true,
   });
 
   return (
-    <S.Header>
+    <S.Header id="top">
       <S.Container>
         <S.Box1>
           <S.Image src={SelecorHat} alt="Selector Hat from Harry Potter" />
-          <h1>HARRY POTTER</h1>
-          <ul>
+          <S.Title>HARRY POTTER</S.Title>
+          <S.List>
             <li>
-              <a
+              <S.A
                 href="https://www.wizardingworld.com/discover/films"
                 target={"_blank"}
               >
                 Movies
-              </a>
+              </S.A>
             </li>
             <li>
-              <a
+              <S.A
                 href="https://www.wizardingworld.com/news/discover-your-hogwarts-house-on-wizarding-world"
                 target={"_blank"}
               >
                 Houses
-              </a>
+              </S.A>
             </li>
             <li>
-              <a
+              <S.A
                 href="https://my.wizardingworld.com/sorting-hat"
                 target={"_blank"}
               >
                 Know your house
-              </a>
+              </S.A>
             </li>
-          </ul>
+          </S.List>
         </S.Box1>
         <S.Box2>
+          <h1>Play music</h1>
           <div>
-            <h1>Play music</h1>
             <button onClick={() => sound.play()}>Play</button>
             <button onClick={() => sound.pause()}>Pause</button>
           </div>

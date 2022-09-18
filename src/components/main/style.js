@@ -16,6 +16,9 @@ export const BoxTitle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Henny Penny', cursive;
+    color: #fff;
+    margin-top: 20px;
 `;
 
 export const Container = styled.div`
@@ -61,4 +64,5 @@ export const Top = styled.div`
 
 export const Title = styled.h1`
     font-size: 1.3em;
+    font-family: 'Henny Penny', cursive;
 `;

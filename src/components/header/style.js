@@ -30,4 +30,35 @@ export const Image = styled.img`
     height: 20vh;
 `;
 
-export const Box2 = styled.div``;
+export const Title = styled.h1`
+    font-size: 2.5em;
+    font-family: 'Henny Penny', cursive;
+`;
+
+export const List = styled.ul`
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+`;
+
+export const A = styled.a`
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #000;
+    transition: 1s all;
+
+    &:hover {
+        transform: scale(1.1);
+        font-weight: bold;
+    }
+`;
+
+export const Box2 = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Cinzel', serif;
+`;
