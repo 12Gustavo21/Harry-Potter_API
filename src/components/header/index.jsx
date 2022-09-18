@@ -3,7 +3,7 @@ import * as S from "./style";
 import SelecorHat from "../img/Selector-hat.png";
 import AuioTheme from "../audio/Audio-theme.mp3";
 import { Howl } from "howler";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Error from "../pages/Error/index";
 import Home from "../pages/Home/Index";
 import Gryffindor from "../pages/Gryffindor/index";
