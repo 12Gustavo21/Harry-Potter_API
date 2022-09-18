@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './components/header/index';
-import Home from './components/pages/Home/Index';
-import Footer from './components/footer/index';
+import Header from './components/pages/Header/index';
+import Main from './components/pages/Main/Index'
+import Footer from './components/pages/footer/index';
 import { GlobalStyle } from './components/global/style';
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
     <div>
       <GlobalStyle />
       <Header />
-      <Home />
+      <Main />
       <Footer />
     </div>
   )

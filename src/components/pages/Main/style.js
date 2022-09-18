@@ -21,6 +21,18 @@ export const BoxTitle = styled.div`
     margin-top: 20px;
 `;
 
+export const Top = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+`;
+
+export const Title = styled.h1`
+    font-size: 1.3em;
+    font-family: 'Henny Penny', cursive;
+`;
+
 export const Container = styled.div`
     display: flex;
     justify-content: center;
@@ -53,16 +65,4 @@ export const Image = styled.img`
         transform: scale(.9);
         filter: drop-shadow(10px 10px 10px #000);
     }
-`;
-
-export const Top = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-`;
-
-export const Title = styled.h1`
-    font-size: 1.3em;
-    font-family: 'Henny Penny', cursive;
 `;

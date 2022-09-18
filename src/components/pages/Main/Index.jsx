@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import { BsFillPersonFill, BsFillHouseDoorFill } from "react-icons/bs";
+import { FaBirthdayCake } from "react-icons/fa";
+import { ImMagicWand } from "react-icons/im";
+import axios from 'axios';
 import * as S from "./style";
-import {BsFillPersonFill, BsFillHouseDoorFill} from "react-icons/bs";
-import {FaBirthdayCake} from "react-icons/fa";
-import {ImMagicWand} from "react-icons/im";
 
 export default function Index() {
   let Api = "http://hp-api.herokuapp.com/api/characters";
@@ -29,8 +29,10 @@ export default function Index() {
               <S.Image src={item.image} alt="personagem" />
             </S.Top>
             <div>
-              <BsFillPersonFill size="1em" /><h5>Actor name: {item.actor}</h5>
-              <FaBirthdayCake size="1em" /> <h5>Birthday: {item.dateOfBirth}</h5>
+              <BsFillPersonFill size="1em" />
+              <h5>Actor name: {item.actor}</h5>
+              <FaBirthdayCake size="1em" />{" "}
+              <h5>Birthday: {item.dateOfBirth}</h5>
               <BsFillHouseDoorFill size="1em" /> <h5>House: {item.house}</h5>
               <ImMagicWand size="1em" /> <h5>Patronus: {item.patronus}</h5>
             </div>
