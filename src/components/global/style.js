@@ -7,5 +7,6 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         list-style: none;
         scroll-behavior: smooth;
+        cursor: url('https://www.cursor.cc/cursor/771/167/cursor.png'), auto !important;
     }
 `;
