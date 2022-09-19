@@ -6,15 +6,13 @@ import axios from "axios";
 import * as S from "./style";
 
 export default function Index() {
-  let Api = "http://hp-api.herokuapp.com/api/characters";
-
   const [characters, setcharacters] = useState([]);
 
   useEffect(() => {
-    axios.get(Api).then((response) => {
+    axios.get("http://hp-api.herokuapp.com/api/characters").then((response) => {
       setcharacters(response.data.slice(0, 25));
     });
-  }, [Api]);
+  }, []);
 
   return (
     <S.Main>
