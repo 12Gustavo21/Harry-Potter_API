@@ -27,6 +27,10 @@ export const Box1 = styled.div`
     width: 100%;
     background: #ffffff10;
     backdrop-filter: blur(5px);
+
+    @media(max-width: 820px) {
+       flex-direction: column;
+    }
 `;
 
 export const Image = styled.img`
