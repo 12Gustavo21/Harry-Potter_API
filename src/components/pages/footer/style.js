@@ -44,7 +44,7 @@ export const A = styled.a`
 export const Farewell = styled.h1`
     font-size: 3em;
     color: #fff;
-    font-family: 'Henny Penny', cursive;
+    font-family: 'Harry Potter', sans-serif;                                              
     text-shadow: 10px 10px 10px #000;
 `;
 

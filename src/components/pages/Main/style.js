@@ -37,7 +37,6 @@ export const Box = styled.div`
     margin: 10px;
     border: 2px solid #000;
     background-color: #fff;
-    width: 20%;
     height: 70vh;
     padding: 10px;
     border-radius: 40px;

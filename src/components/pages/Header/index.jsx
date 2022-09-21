@@ -16,7 +16,7 @@ export default function index() {
       <S.Container>
         <S.Box1>
           <S.Image src={SelecorHat} alt="Selector Hat from Harry Potter" />
-          <S.Title>HARRY POTTER</S.Title>
+          <S.Title>Harry Potter</S.Title>
           <S.DIV>
             <S.List>
               <li>

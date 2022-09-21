@@ -40,7 +40,7 @@ export const Image = styled.img`
 
 export const Title = styled.h1`
     font-size: 2.5em;
-    font-family: 'Henny Penny', cursive;
+    font-family: 'Harry Potter', sans-serif;                                                
 `;
 
 export const DIV = styled.div`
