@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/Harry-Potter_API/static/js/main.44e127bf.js",
+    "static/media/Audio-theme.mp3": "/Harry-Potter_API/static/media/Audio-theme.09135d3fcc889b5ca92b.mp3",
+    "static/media/Background.jpg": "/Harry-Potter_API/static/media/Background.0f8e8db93c572e6d6679.jpg",
+    "static/media/BackgroundFooter.jpg": "/Harry-Potter_API/static/media/BackgroundFooter.06a3d2cb238703018b76.jpg",
+    "static/media/Selector-hat.png": "/Harry-Potter_API/static/media/Selector-hat.415f1a81ba2f3ea72afb.png",
+    "static/media/Owl.png": "/Harry-Potter_API/static/media/Owl.f569d8e7a3f1ea7d03b2.png",
+    "index.html": "/Harry-Potter_API/index.html",
+    "main.44e127bf.js.map": "/Harry-Potter_API/static/js/main.44e127bf.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.44e127bf.js"
+  ]
+}
