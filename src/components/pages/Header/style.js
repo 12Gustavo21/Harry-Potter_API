@@ -29,18 +29,27 @@ export const Box1 = styled.div`
     backdrop-filter: blur(5px);
 
     @media(max-width: 820px) {
-       flex-direction: column;
+        flex-direction: column;
     }
 `;
 
 export const Image = styled.img`
     width: 10%;
     height: 20vh;
+
+    @media(max-width: 820px) {
+        width: 15%;
+    }
+
+    @media(max-width: 450px) {
+        width: 25%;
+    }
 `;
 
 export const Title = styled.h1`
     font-size: 2.5em;
-    font-family: 'Harry Potter', sans-serif;                                                
+    font-family: 'Harry Potter', sans-serif; 
+    filter: drop-shadow(10px 10px 10px #ffffff50);   
 `;
 
 export const DIV = styled.div`
@@ -48,6 +57,10 @@ export const DIV = styled.div`
     justify-content: space-around;
     align-items: center;
     width: 50%;
+
+    @media(max-width: 820px) {
+        width: 100%;
+    }
 `;
 
 export const List = styled.ul`
@@ -63,6 +76,20 @@ export const List = styled.ul`
 
         &:hover {
             transform: scale(1.1);
+        }
+    }
+
+    @media(max-width: 820px) {
+        width: 90%;
+    }
+
+    @media(max-width: 375px) {
+        width: 95%;
+    }
+
+    @media(max-width: 350px) {
+        li {
+            font-size: .9em;
         }
     }
 `;
@@ -101,6 +128,10 @@ export const Buttons = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    @media(max-width: 350px) {
+        width: 100%;
+    }
 `;
 
 export const Button = styled.button`

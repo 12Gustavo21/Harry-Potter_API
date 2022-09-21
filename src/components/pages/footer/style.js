@@ -21,6 +21,12 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media(max-width: 680px) {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
 `;
 
 export const Box = styled.div`
@@ -46,6 +52,10 @@ export const Farewell = styled.h1`
     color: #fff;
     font-family: 'Harry Potter', sans-serif;                                              
     text-shadow: 10px 10px 10px #000;
+
+    @media(max-width: 350px) {
+        font-size: 2.5em;
+    }
 `;
 
 export const IMG = styled.img`

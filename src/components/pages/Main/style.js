@@ -19,6 +19,7 @@ export const BoxTitle = styled.div`
     font-family: 'Henny Penny', cursive;
     color: #fff;
     margin-top: 20px;
+    text-align: center;
 `;
 
 export const Container = styled.div`
@@ -37,7 +38,8 @@ export const Box = styled.div`
     margin: 10px;
     border: 2px solid #000;
     background-color: #fff;
-    height: 70vh;
+    max-width: 100%;
+    max-height: 70vh;
     padding: 10px;
     border-radius: 40px;
 `;
@@ -47,6 +49,7 @@ export const Top = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 `;
 
 export const Title = styled.h1`
