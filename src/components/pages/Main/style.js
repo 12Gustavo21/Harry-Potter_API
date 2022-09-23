@@ -66,6 +66,7 @@ export const Image = styled.img`
     &:hover {
         transform: scale(.9);
         filter: drop-shadow(10px 10px 10px #000);
+        border-radius: 20px;
     }
 `;
 

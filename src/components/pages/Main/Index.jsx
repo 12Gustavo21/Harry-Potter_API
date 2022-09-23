@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import { BsFillPersonFill, BsFillHouseDoorFill } from "react-icons/bs";
 import { FaBirthdayCake } from "react-icons/fa";
 import { ImMagicWand } from "react-icons/im";
-import axios from "axios";
+import { Api } from "../../services/Api";
 import * as S from "./style";
 
 export default function Index() {
   const [characters, setcharacters] = useState([]);
 
   useEffect(() => {
-    axios.get("http://hp-api.herokuapp.com/api/characters").then((response) => {
+    Api.get().then((response) => {
       setcharacters(response.data.slice(0, 25));
     });
   }, []);
@@ -21,7 +21,7 @@ export default function Index() {
       </S.BoxTitle>
       <S.Container>
         {characters.map((item, index) => (
-          <S.Box>
+          <S.Box key={index}>
             <S.Top>
               <S.Title>{item.name}</S.Title>
               <S.Image src={item.image} alt={item.name} />
@@ -41,7 +41,7 @@ export default function Index() {
               </S.information>
               <S.information>
                 <ImMagicWand size="1em" />
-                <h5>Patronus: {item.patronus}</h5>
+                <h5>Patronus: {item.patronus ? item.patronus : "Don't have patronus"}</h5>
               </S.information>
             </S.Description>
           </S.Box>
